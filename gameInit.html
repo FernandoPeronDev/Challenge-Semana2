@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado en JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main class="contenedor-principal">
+        
+        <div class="texto">
+            
+            <h1 class="titulo">El Ahorcado:</h1>
+            
+            <p class="descripcion">Es un juego de adivinanzas de lápiz y papel para dos o más jugadores. Un jugador piensa en una palabra, frase u oración y el otro trata de adivinarla según lo que sugiere por letras o dentro de un cierto número de oportunidades.</p>
+        
+            <p class="instrucciones">Inserte una letra, por favor.</p>
+        
+        </div>
+
+        <div class="juego">
+
+            
+            <input  maxlength="1" type="text" class="input" placeholder="Insertar letra..." id="letra" name="soloLetras" onkeypress="return soloLetras(event)">
+            
+            <button id="btn" class="boton" onclick="calcular()"> 
+                <p  class="parrafo-btn">Verificar</p> 
+            </button>
+            
+            
+        </div>
+        
+        
+        <div class="dibujo">
+            
+            <div class="ahorcado" id="ahorcado"></div>
+            
+            <div class="guiones">
+                <p id= "output"></p>
+            </div>
+
+        
+        </div>
+
+        <section id="letrasFaltantes">
+                    <h1>Letras Incorrectas:    </h1>
+        </section>
+        
+        
+
+    
+    </main>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

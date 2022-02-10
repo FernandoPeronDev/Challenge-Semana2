@@ -1,0 +1,219 @@
+:root{
+    /* Colores */
+    
+    --colorFondo: #87c3ce;
+
+    /* Fuentes */
+
+    --fuentePrincipal: 'Caveat', cursive;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+ 
+    background-color: var(--colorFondo);
+    overflow-y: hidden;
+
+}
+
+
+/* Fuentes */
+
+h1,
+h2,
+h3,
+p{
+    font-family: var(--fuentePrincipal);
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+p{
+    font-size: 2.4rem;
+}
+
+/* Index */
+
+.contenedor{
+    background-image: url(../img/ahorcado.png);
+    max-width: 120rem;
+    width: 100%;
+    height: 70rem;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 12rem;
+    background-size: contain;
+}
+
+.linkGame{
+    display: flex;
+    justify-content: center;
+    max-width: 120rem;
+    width: 100%;
+    height: 55rem;
+    align-items: flex-end;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    width: 12rem;
+    height: 5rem;
+    background-color: #BEBCA3;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: #F7F7F7;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    font-weight: 700;
+}
+
+
+
+/* Diseño */
+
+.contenedor-principal{
+    max-width: 100rem;
+    width: 100%;
+    height: 100rem;
+    background-image: url(../img/backgroundPrincipal.PNG);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.texto{
+    color: rgba(3, 0, 2, 0.84);
+    display: flex;
+    flex-direction: column;
+    padding-top: 14rem;
+}
+
+.titulo{
+    width:68%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 17rem;
+}
+
+.descripcion,
+.instrucciones{
+    width: 60%;
+    margin-left: 17rem;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.instrucciones{
+    margin: 2rem 17rem 0;
+}
+
+
+/* Juego */
+
+.juego{
+    margin-left: 15rem;
+    font-family: var(--fuentePrincipal);
+    font-size: 1rem;
+    color: rgba(3, 0, 2, 0.84);
+    display: flex;
+}
+
+.input{
+    color: rgba(3, 0, 2, 0.84);
+    background-image: url(../img/sombreado.PNG);
+    background-size: cover;
+    border: 0;
+    height: 5rem;
+    width: 20rem;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+    font-size: 1rem;
+    margin-left: 11rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+::placeholder{
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.boton{
+    height: 5rem;
+    width: 15rem;
+    background-image: url(../img/boton.PNG);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.parrafo-btn{
+    font-size: 2rem;
+    padding-left: 4rem;
+    font-weight: 500;
+    color: rgba(3, 0, 2, 0.84);
+}
+
+
+.dibujo{
+    display: flex;
+    margin-left: 15rem;
+    margin-top: 2rem;
+}
+
+.guiones{
+    margin-top: 16rem;
+    margin-left: 6rem;
+    text-transform: uppercase;
+}
+
+.ahorcado{
+    height: 212px;
+    width: 201px;
+    background-image: url(../img/ahorcadoGame.png);
+    margin-left: 2rem;
+}
+
+#letrasFaltantes
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20rem;
+    width: 100%;
+    font-size: 4rem;
+    color: rgba(3, 0, 2, 0.84);
+}
+
+#letrasFaltantes,h1{
+    margin: 0 2rem 0 8rem ;
+    
+}
+
+.letra-faltante{
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
